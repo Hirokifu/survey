@@ -1,0 +1,49 @@
+<!-- ＜イベントの案内を作成するページ＞
+
+【仕様１：既定日程に参加者を集める】
+・日程（カレンダーより入力）
+・場所（地図表示）
+・プログラム（記入、又はファイルのアップロード）
+・参加／欠席の選択肢⇒入力修正可能
+・参加の場合、参加人数（大人／子供）
+
+【仕様２：メンバーに都合を確認する】
+・予定日（３つの選択肢を用意）
+・予定場所
+・仮のプログラム
+・参加人数（大人／子供） -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>HTML内でのPHP処理</title>
+</head>
+
+<body>
+<h3>個人登録画面</h3>
+
+<form method="POST" action="organizer.php">
+<p>ご入力ください</p>
+<div>
+    <label>名前：</label>
+    <input type="text" name="name" maxlength="30" placeholder="Tom" size="80">
+</div>
+<div>
+    <label>住所：</label>
+    <input type="text" name="address" maxlength="30" placeholder="名古屋市千種区東山元町" size="80">
+</div>
+<div>
+    <label>本文：</label>
+    <textarea name="memo" cols="80" rows="10"></textarea>
+</div>
+
+<p>
+<input type="submit" value="送信" class="form-btn">
+</p>
+
+</form>
+
+</body>
+<p>Copyright by NoahTime Inc.</p>
+</html>
